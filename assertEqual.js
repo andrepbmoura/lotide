@@ -6,9 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
+assertEqual("Lighthouse Labs", "Bootcamp");
 
-assertEqual(2, 1);
+assertEqual(3, 3);
 
 
 
