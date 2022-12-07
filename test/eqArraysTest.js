@@ -1,6 +1,5 @@
-const assertEqual = require('../assertEqual')
-const eqArrays = require('../eqArrays')
+const lotide = require('../index');
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+lotide.assertEqual(lotide.eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+lotide.assertEqual(lotide.eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+lotide.assertEqual(lotide.eqArrays([1, 2, 3], [1, 2, 3]), true);
