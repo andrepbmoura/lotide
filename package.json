@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@andrepbmoura/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/andrepbmoura/lotide.git"
   },
-  "author": "",
+  "author": "Andre Moura <andrepaesbm@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andrepbmoura/lotide/issues"
