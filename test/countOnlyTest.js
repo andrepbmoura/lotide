@@ -1,20 +1,26 @@
+const assert = require('chai').assert;
 const lotide = require('../index');
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
+describe('#countOnly', () => {
+  it('should return a specific subset of elements', () => {
+  const firstNames = [
+    "Karl",
+    "Salima",
+    "Agouhanna",
+    "Fang",
+    "Kavith",
+    "Jason",
+    "Salima",
+    "Fang",
+    "Joe"
+    ];
+    
+  const result1 = lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-const result1 = lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+  assert.strictEqual(result1["Jason"], 1);
+  assert.strictEqual(result1["Karima"], undefined);
+  assert.strictEqual(result1["Fang"], 2);
+  assert.strictEqual(result1["Agouhanna"], undefined);
+  });
+});
 
-lotide.assertEqual(result1["Jason"], 1);
-lotide.assertEqual(result1["Karima"], undefined);
-lotide.assertEqual(result1["Fang"], 2);
-lotide.assertEqual(result1["Agouhanna"], undefined);

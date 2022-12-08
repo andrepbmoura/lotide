@@ -1,6 +1,6 @@
-const lotide = require('../index');
+const assertArraysEqual = require('../assertArraysEqual');
 
-lotide.assertArraysEqual([1, 2, 3], [1, 2, 3]);
-lotide.assertArraysEqual([1, 9, 2], [1, 4, 8]);
-lotide.assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-lotide.assertArraysEqual(["1", "2", "3"], ["1", "2", 10]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([1, 9, 2], [1, 4, 8]);
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
+assertArraysEqual(["1", "2", "3"], ["1", "2", 10]);
