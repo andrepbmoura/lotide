@@ -3,24 +3,25 @@ const lotide = require('../index');
 
 describe('#countOnly', () => {
   it('should return a specific subset of elements', () => {
-  const firstNames = [
-    "Karl",
-    "Salima",
-    "Agouhanna",
-    "Fang",
-    "Kavith",
-    "Jason",
-    "Salima",
-    "Fang",
-    "Joe"
+    const firstNames = [
+      'Karl',
+      'Salima',
+      'Agouhanna',
+      'Fang',
+      'Kavith',
+      'Jason',
+      'Salima',
+      'Fang',
+      'Joe',
     ];
-    
-  const result1 = lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-  assert.strictEqual(result1["Jason"], 1);
-  assert.strictEqual(result1["Karima"], undefined);
-  assert.strictEqual(result1["Fang"], 2);
-  assert.strictEqual(result1["Agouhanna"], undefined);
+    const result1 = lotide.countOnly(firstNames, {
+      Jason: true, Karima: true, Fang: true, Agouhanna: false,
+    });
+
+    assert.strictEqual(result1.Jason, 1);
+    assert.strictEqual(result1.Karima, undefined);
+    assert.strictEqual(result1.Fang, 2);
+    assert.strictEqual(result1.Agouhanna, undefined);
   });
 });
-
