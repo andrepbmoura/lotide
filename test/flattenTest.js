@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const lotide = require('../index');
 
 describe('#flatten', () => {
